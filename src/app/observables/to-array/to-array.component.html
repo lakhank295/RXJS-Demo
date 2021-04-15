@@ -1,0 +1,25 @@
+<div class="my-3">
+    <h2>toArray</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex 01 | Using Interval</strong>
+            <hr>
+            <ul>
+                <li *ngFor = "let item of intervalData">
+                    {{item}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <strong>Ex 02 | From Object to Array</strong>
+            <hr>
+            <ul>
+                <li *ngFor = "let item of userData">
+                    <strong>{{item.name}} - {{item.role}}</strong> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

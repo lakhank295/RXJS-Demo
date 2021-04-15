@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+#elContainer {
+    margin-bottom: 0;
+}
+
+ul.techList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.techList li {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin-bottom: 10px;
+}
+
+ul.techList.error li {
+    color: red;
+    background: rgba(255, 0, 0, 0.09);
+    border-color: red;
+}
+
+ul.techList.success li {
+    color: green;
+    background: rgba(0, 128, 0, 0.23);
+    border-color: green;
+}
+
+ul.videoList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.videoList li {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

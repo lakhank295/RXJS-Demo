@@ -1,0 +1,35 @@
+<div class="my-3">
+    <h2>Custom Observables</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Ex 01 (Manual)</strong>
+            <hr>
+            <ul class="techList" [ngClass] = "techStatus == 'completed' ? 'success' : techStatus == 'error' ? 'error' : ''" id="elContainer1"></ul>
+        </div>
+
+        <div class="col-md-6">
+            <strong>Ex 02 (Custom Interval Observables)</strong>
+            <hr>
+            <ul id="elContainer2" class="techList" [ngClass] = "techStatus2 == 'completed' ? 'success' : techStatus2 == 'error' ? 'error' : ''"></ul>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <strong>Ex 03 Random Names</strong>
+
+            <p class="border rounded bg-light py-2 px-3">
+                <strong>Random Names: </strong> 'Lakhan', 'Deepak', 'Khandelwal', 'Kishan', 'Kalyani'
+            </p>
+            <hr>
+            <p>Current Name: <strong class="text-success">{{randName}}</strong></p>
+            <span class="badge " [ngClass] = "nameStatus == 'completed' ? 'badge-success' : nameStatus == 'error' ? 'badge-danger' : 'badge-primary'">
+                
+
+                {{ nameStatus == 'completed' ? 'Success' : nameStatus == 'error' ? 'Error' : 'Fetching...' }}
+            </span>
+
+        </div>
+    </div>
+</div>

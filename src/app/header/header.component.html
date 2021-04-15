@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">RxJS</a>
+    <strong *ngIf="exclusive">
+      <span class="badge badge-primary">Exclusive</span>
+    </strong>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink = "/">Observables</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink = "promise">Promise</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink = "async">Async</a>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,30 @@
+<div class="my-3">
+    <h2>Zip</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="border rounded bg-light py-2 px-3">
+                <strong>Zip: </strong> Zip Data
+            </p>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Role</th>
+                </tr>
+                <tr *ngFor = "let item of data">
+                    <td>
+                        {{item.name}}
+                    </td>
+                    <td>
+                        {{item.age}}
+                    </td>
+                    <td>
+                        {{item.role}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</div>
